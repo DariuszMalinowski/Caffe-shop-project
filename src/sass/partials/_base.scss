@@ -1,0 +1,30 @@
+* { box-sizing: border-box; }
+
+html, body { height: 100%; }
+
+body {
+  margin: 0;
+  font-family: "Montserrat", system-ui, sans-serif;
+  background: #fff;
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.section-title {
+  font-size: 30px;
+  text-align: center;
+  margin: 70px 0 10px;
+  letter-spacing: 6px;
+  color: var(--accent);
+}
+
+/* SPA — ukrywanie stron */
+.page[hidden] {
+  display: none;
+}
