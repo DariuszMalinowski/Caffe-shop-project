@@ -1,26 +1,23 @@
 export const select = {
-  containerOf: {
-    pages: '#pages',
-    home: '#home',
-    products: '#products',
-    contact: '#contact',
-  },
-  nav: {
-    links: '[data-nav]',
-  },
-  products: {
-    list: '#products-list',
-  }
-};
-
-export const classNames = {
-  pages: {
-    active: 'active',
+  headers: {
+    header: '.container',
   }
 };
 
 export const settings = {
-  api: {
-    productsUrl: 'http://localhost:3000'
-  }
+  cart: {
+    defaultDeliveryFee: 20,
+  },
+  db: {
+    url: '//' + window.location.hostname + (window.location.hostname=='localhost' ? ':3131' : ''),
+  },
 };
+
+
+/* global Handlebars */
+export const templates = {
+  menuProduct: Handlebars.compile(document.querySelector(select.templateOf.menuProduct).innerHTML),
+  cartProduct: Handlebars.compile(document.querySelector(select.templateOf.cartProduct).innerHTML),
+  bookingWidget: Handlebars.compile(document.querySelector(select.templateOf.bookingWidget).innerHTML),
+};
+

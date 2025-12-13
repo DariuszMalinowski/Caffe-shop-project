@@ -1,0 +1,25 @@
+
+console.log('js działa');
+
+//Obsluga hamburger menu
+function initMobileNav() {
+  const toggle = document.querySelector('.nav-toggle');
+  const body = document.body;
+  const links = document.querySelectorAll('.site-nav a');
+
+  if (!toggle) return;
+
+  toggle.addEventListener('click', function() {
+    const isOpen = body.classList.toggle('nav-open');
+    toggle.setAttribute('aria-expanded', isOpen);
+  });
+
+  links.forEach(link => {
+    link.addEventListener('click', () => {
+      body.classList.remove('nav-open');
+      toggle.setAttribute('aria-expanded', 'false');
+    });
+  });
+}
+
+document.addEventListener('DOMContentLoaded', initMobileNav);
