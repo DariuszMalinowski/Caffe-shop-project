@@ -69,12 +69,14 @@
   gap: 50px;                 /* odstęp między ikonami */
   margin-top: 10px;
   padding-bottom: 10px;
+  text-decoration: none;
+  text-shadow: 10%;
 }
 
 .footer-bottom .social-link {
   //padding: 20px 0;
   font-size: 2rem;           /* rozmiar ikon */
-  color: #4a4848;               /* kolor bazowy (np. biały) */
+  color: #453e3e;               /* kolor bazowy (np. biały) */
   text-decoration: none;
   transition: transform 0.3s ease, color 0.3s ease;
 }

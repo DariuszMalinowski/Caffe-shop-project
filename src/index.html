@@ -77,30 +77,27 @@
     </section>
 
     <!-- CONTACT PAGE -->
-    <section id="contact" class="page" aria-labelledby="contact-title">
-      <div class="container contact">
-        <h2 id="contact-title" class="section-title">CONTACT</h2>
-
-        <p>Write to us at <a href="mailto:hello@example.com">hello@example.com</a>
-          or call: +48 123 456 789</p>
+    <section id="contact" class="page contact-section" aria-labelledby="contact-title">
+      <div class="container">
+        <h2 id="contact-title" class="section-title">CONTACT US</h2>
 
         <form id="contact-form" class="contact-form" novalidate>
-          <label>
-            Your name
-            <input name="name" type="text" required>
-          </label>
+          <div class="form-group">
+            <label for="name">NAME</label>
+            <input id="name" name="name" type="text" required>
+          </div>
 
-          <label>
-            Email
-            <input name="email" type="email" required>
-          </label>
+          <div class="form-group">
+            <label for="title">TITLE</label>
+            <input id="title" name="title" type="text" required>
+          </div>
 
-          <label>
-            Message
-            <textarea name="message" rows="5" required></textarea>
-          </label>
+          <div class="form-group">
+            <label for="message">MESSAGE</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
 
-          <button class="btn" type="submit">Send</button>
+          <button class="btn submit-btn" type="submit">SUBMIT</button>
         </form>
       </div>
     </section>
@@ -112,7 +109,6 @@
   <div class="footer-bg">
     <div class="container footer-content">
       <h2 class="footer-title">ABOUT US</h2>
-
       <p>
         Who are we? Just a bunch of friends with a love for a good coffee
         and desire to create something new, something original.
@@ -121,23 +117,20 @@
         our coffes reflect us - young, wild and free.
         We are on the journey of new tastes...
       </p>
-
       <p class="footer-cta">Join us!</p>
     </div>
   </div>
-
   <div class="footer-bottom">
-    <a href="https://facebook.com" target="_blank" class="social-link facebook">.
-      <i class="fa-brands fa-facebook"></i>
+    <a href="https://facebook.com" target="_blank" class="social-link facebook">
+      <i class="fa-brands fa-facebook"></i> Facebook
     </a>
-    <a href="https://www.tiktok.com" target="_blank" class="social-link tiktok">.
-      <i class="fa-brands fa-tiktok"></i>
+    <a href="https://www.tiktok.com" target="_blank" class="social-link tiktok">
+      <i class="fa-brands fa-tiktok"></i> Tik Tok
     </a>
-    <a href="https://youtube.com" target="_blank" class="social-link youtube">.
-      <i class="fa-brands fa-youtube"></i>
+    <a href="https://youtube.com" target="_blank" class="social-link youtube">
+      <i class="fa-brands fa-youtube"></i> You Tube
     </a>
   </div>
-
 </footer>
 
 

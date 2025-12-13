@@ -1,4 +1,21 @@
 
+//import Products from './components/Products.js';
+
+/*activatePage(pageId) {
+  // pokazuj / chowaj strony
+  this.pages.forEach(page => {
+    page.toggleAttribute('hidden', page.id !== pageId);
+  });
+
+  if (pageId === 'products' && !this.products) {
+    this.products = new Products(document.querySelector('#products'));
+  }
+}
+*/
+
+
+
+
 console.log('js działa');
 
 //Obsluga hamburger menu
