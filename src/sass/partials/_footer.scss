@@ -101,3 +101,48 @@
   -webkit-text-fill-color: transparent;
 }
 
+/* Responsywność stopki */
+@media (max-width: 768px) {
+  .footer-content {
+    padding: 40px 20px; /* mniejsze odstępy */
+    max-width: 100%;    /* pełna szerokość */
+    text-align: center; /* wyśrodkowanie tekstu */
+  }
+
+  .footer-title {
+    letter-spacing: 3px; /* mniejsze odstępy między literami */
+    font-size: 1.2rem;
+  }
+
+  .footer-content p {
+    font-size: 0.9rem;
+  }
+
+  .footer-bottom {
+    gap: 20px; /* zmniejszony odstęp między ikonami */
+    flex-wrap: wrap; /* ikony mogą się łamać w kolejnym wierszu */
+  }
+
+  .footer-bottom .social-link {
+    font-size: 1.5rem; /* mniejsze ikony */
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-content {
+    padding: 30px 15px;
+  }
+
+  .footer-title {
+    font-size: 1rem;
+    letter-spacing: 2px;
+  }
+
+  .footer-bottom {
+    gap: 15px;
+  }
+
+  .footer-bottom .social-link {
+    font-size: 1.3rem;
+  }
+}
