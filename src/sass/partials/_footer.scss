@@ -5,10 +5,9 @@
   font-size: 14px;
 }
 
-/* tło ze zdjęciem */
 .footer-bg {
   position: relative;
-  min-height: 320px; /* kontrola wysokości */
+  min-height: 320px;
   background-image: url('../images/about-us.jpg ');
   background-size: cover;
   background-position: center;
@@ -35,21 +34,20 @@
   letter-spacing: 6px;
   color: var(--accent);
   margin-bottom: 24px;
-  position: relative;       /* potrzebne, żeby ::after ustawić względem tekstu */
+  position: relative;
   display: inline-block; 
 }
 
 .footer-title::after {
-  content: "";              /* tworzymy pusty pseudo-element */
+  content: "";
   position: absolute;
   left: 0;
-  bottom: -5px;             /* odstęp od tekstu */
-  width: 100%;              /* szerokość = szerokość tekstu */
-  height: 3px;              /* grubość paska */
-  background-color: #eab166; /* kolor paska */
-  border-radius: 2px;       /* zaokrąglenie */
+  bottom: -5px;
+  width: 100%;
+  height: 3px;
+  background-color: #eab166;
+  border-radius: 2px;
 }
-
 
 .footer-content p {
   line-height: 1.6;
@@ -61,12 +59,11 @@
   font-style: italic;
 }
 
-
 /* dolny pasek */
 .footer-bottom {
   display: flex;
-  justify-content: center;   /* wyśrodkowanie */
-  gap: 50px;                 /* odstęp między ikonami */
+  justify-content: center;
+  gap: 50px;
   margin-top: 10px;
   padding-bottom: 10px;
   text-decoration: none;
@@ -75,23 +72,22 @@
 
 .footer-bottom .social-link {
   //padding: 20px 0;
-  font-size: 2rem;           /* rozmiar ikon */
-  color: #453e3e;               /* kolor bazowy (np. biały) */
+  font-size: 2rem;/* rozmiar ikon */
+  color: #453e3e;
   text-decoration: none;
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .footer-bottom .social-link:hover {
-  transform: scale(1.3);     /* powiększenie przy najechaniu */
+  transform: scale(1.3);
 }
 
-/* Kolory naturalne dla każdej ikony */
 .footer-bottom .facebook:hover {
-  color: #1877f2;            /* Facebook niebieski */
+  color: #1877f2;
 }
 
 .footer-bottom .youtube:hover {
-  color: #ff0000;            /* YouTube czerwony */
+  color: #ff0000;
 }
 
 .footer-bottom .tiktok:hover {
@@ -104,13 +100,13 @@
 /* Responsywność stopki */
 @media (max-width: 768px) {
   .footer-content {
-    padding: 40px 20px; /* mniejsze odstępy */
-    max-width: 100%;    /* pełna szerokość */
-    text-align: center; /* wyśrodkowanie tekstu */
+    padding: 40px 20px;
+    max-width: 100%;
+    text-align: center;
   }
 
   .footer-title {
-    letter-spacing: 3px; /* mniejsze odstępy między literami */
+    letter-spacing: 3px;
     font-size: 1.2rem;
   }
 
@@ -119,12 +115,12 @@
   }
 
   .footer-bottom {
-    gap: 20px; /* zmniejszony odstęp między ikonami */
-    flex-wrap: wrap; /* ikony mogą się łamać w kolejnym wierszu */
+    gap: 20px;
+    flex-wrap: wrap;
   }
 
   .footer-bottom .social-link {
-    font-size: 1.5rem; /* mniejsze ikony */
+    font-size: 1.5rem;
   }
 }
 

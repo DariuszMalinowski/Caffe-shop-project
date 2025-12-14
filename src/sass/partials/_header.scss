@@ -21,8 +21,6 @@
   color: white;
 }
 
-/* ---------- NAV DESKTOP ---------- */
-
 .site-nav {
   display: flex;
   gap: 28px;
@@ -34,7 +32,7 @@
   font-weight: 500;
 }
 
-/* ---------- HAMBURGER ---------- */
+//HAMBURGER 
 
 .nav-toggle {
   display: none;
@@ -53,7 +51,7 @@
   transition: 0.3s;
 }
 
-/* ---------- MOBILE ---------- */
+// MOBILE 
 
 @media (max-width: 768px) {
   .nav-toggle {
@@ -96,7 +94,7 @@
     white-space: nowrap;
   }
 
-  /* hamburger -> X */
+//  hamburger 
   .nav-toggle.is-open span:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
   }

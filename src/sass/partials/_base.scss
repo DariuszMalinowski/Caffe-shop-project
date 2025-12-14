@@ -21,10 +21,21 @@ body {
   text-align: center;
   margin: 70px 0 10px;
   letter-spacing: 6px;
-  color: var(--accent);
+  color: rgb(222, 157, 27);
 }
 
-/* SPA — ukrywanie stron */
+.section-title::after {
+  content: "";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-inline: 35%;
+  width: 30%;
+  height: 3px;
+  background-color: #eab166;
+  border-radius: 2px;
+}
+
 .page[hidden] {
   display: none;
 }

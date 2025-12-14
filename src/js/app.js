@@ -1,3 +1,4 @@
+/* global Handlebars */
 import { products } from './components/products.js';
 
 //Hamburger menu

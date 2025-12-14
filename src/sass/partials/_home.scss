@@ -9,30 +9,27 @@
 
   .hero-inner {
     color: #b67334;
-    //position: relative;       /* potrzebne, żeby ::after ustawić względem tekstu */
-    //display: inline-block; 
 
     .hero__title {
       font-size: 64px;
       line-height: 0.95;
       letter-spacing: 6px;
-      position: relative;       /* potrzebne, żeby ::after ustawić względem tekstu */
-      display: inline-block;    /* żeby pasek dopasował się do szerokości tekstu */
+      position: relative;
+      display: inline-block;
     }
 
     .hero__title::after {
-      content: "";              /* tworzymy pusty pseudo-element */
+      content: "";
       position: absolute;
       left: 25%;
-      bottom: -5px;             /* odstęp od tekstu */
-      width: 50%;              /* szerokość = szerokość tekstu */
-      height: 3px;              /* grubość paska */
-      background-color: #b67334; /* kolor paska */
-      border-radius: 2px;       /* zaokrąglenie */
+      bottom: -5px;
+      width: 50%;
+      height: 3px;
+      background-color: #b67334;
+      border-radius: 2px;
     }
   }
 }
-
 
 @media (max-width: 1100px) {
   .hero .hero__title {
