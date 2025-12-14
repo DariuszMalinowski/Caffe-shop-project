@@ -1,42 +1,45 @@
+import { products } from './components/products.js';
 
-//import Products from './components/Products.js';
-
-/*activatePage(pageId) {
-  // pokazuj / chowaj strony
-  this.pages.forEach(page => {
-    page.toggleAttribute('hidden', page.id !== pageId);
-  });
-
-  if (pageId === 'products' && !this.products) {
-    this.products = new Products(document.querySelector('#products'));
-  }
-}
-*/
-
-
-
-
-console.log('js działa');
-
-//Obsluga hamburger menu
+//Hamburger menu
 function initMobileNav() {
   const toggle = document.querySelector('.nav-toggle');
-  const body = document.body;
-  const links = document.querySelectorAll('.site-nav a');
+  const nav = document.querySelector('.site-nav');
 
-  if (!toggle) return;
+  if (!toggle || !nav) return;
 
-  toggle.addEventListener('click', function() {
-    const isOpen = body.classList.toggle('nav-open');
-    toggle.setAttribute('aria-expanded', isOpen);
-  });
-
-  links.forEach(link => {
-    link.addEventListener('click', () => {
-      body.classList.remove('nav-open');
-      toggle.setAttribute('aria-expanded', 'false');
-    });
+  toggle.addEventListener('click', () => {
+    toggle.classList.toggle('is-open');
+    nav.classList.toggle('is-open');
   });
 }
 
-document.addEventListener('DOMContentLoaded', initMobileNav);
+//Products
+function initProducts() {
+  const container = document.querySelector('#products-list');
+  const templateEl = document.querySelector('#product-template');
+
+  if (!container || !templateEl) {
+    console.warn('Brak kontenera lub template');
+    return;
+  }
+
+  const template = Handlebars.compile(templateEl.innerHTML);
+
+  products.forEach((product, index) => {
+    const html = template(
+      /*{
+      ...product,
+      index: index + 1
+    }*/
+      Object.assign({}, product, { index: index + 1 })
+    );
+
+    container.insertAdjacentHTML('beforeend', html);
+  });
+}
+
+//wywołania
+document.addEventListener('DOMContentLoaded', () => {
+  initMobileNav();
+  initProducts();
+});
