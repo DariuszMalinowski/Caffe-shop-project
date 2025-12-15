@@ -1,6 +1,6 @@
 
 .contact-section {
-  background-color: white; 
+  background-color: white;
   color: #eee;
   padding: 4rem 2rem;
   text-align: center;
@@ -46,7 +46,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgb(222, 157, 27);;
+  background-color: rgb(222, 157, 27);
   position: relative;
   padding: 18px 20px;
   font-size: 1.2em;
@@ -104,4 +104,8 @@
   50%  { left: 0%; }
 
   100% { left: 100%; }
+}
+
+.page[hidden] {
+  display: none;
 }

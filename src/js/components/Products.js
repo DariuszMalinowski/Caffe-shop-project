@@ -4,7 +4,7 @@ export const products = [
     name: 'LA LAGARTIJA',
     price: 9,
     description: 'You must try',
-    image: 'images/coffee-1.png',
+    image: 'images/coffee-1.webp',
     roasting: 5,
     intensity: 6,
     badge: 'Most popular'
@@ -14,7 +14,7 @@ export const products = [
     name: 'EL TIGRE',
     price: 9,
     description: 'There\'s no better way to high your energy.',
-    image: 'images/coffee-2.png',
+    image: 'images/coffee-2.webp',
     roasting: 8,
     intensity: 9
   },
@@ -23,7 +23,7 @@ export const products = [
     name: 'LA CUCARACHA',
     price: 9,
     description: 'Perfect start of your day.',
-    image: 'images/coffee-3.png',
+    image: 'images/coffee-3.webp',
     roasting: 3,
     intensity: 7
   }

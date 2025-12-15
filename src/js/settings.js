@@ -11,7 +11,6 @@ export const settings = {
 };
 
 
-/* global Handlebars */
 export const templates = {
 
 };

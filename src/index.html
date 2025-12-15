@@ -51,7 +51,7 @@
   <main id="pages" class="main">
 
     <!-- HOME PAGE -->
-    <section id="home" class="page" aria-labelledby="home-title">
+    <section id="home" class="pag" aria-labelledby="home-title">
       <div class="hero">
         <div class="hero-inner container">
           <h2 id="home-title" class="hero__title">
@@ -66,7 +66,7 @@
     </section>
 
     <!-- PRODUCTS PAGE -->
-    <section id="products" class="page" aria-labelledby="products-title">
+    <section id="products" class="page" aria-labelledby="products-title" hidden>
   <div class="container">
     <h2 id="products-title" class="section-title">PRODUCTS</h2>
 
@@ -80,7 +80,7 @@
 <script id="product-template" type="text/x-handlebars-template">
   <article class="product-card">
     <div class="product-image-wrap">
-      <img src="{{image}}" alt="{{name}} coffee" class="product-image">
+      <img src="{{image}}" alt="{{name}} coffee" class="product-image" loading="lazy" width="360" height="240">
     </div>
 
     <div class="product-content">
@@ -103,7 +103,7 @@
 
 
 <!-- CONTACT PAGE -->
-    <section id="contact" class="page contact-section" aria-labelledby="contact-title">
+    <section id="contact" class="page contact-section" aria-labelledby="contact-title" hidden>
       <div class="container">
         <h2 id="contact-title" class="section-title">CONTACT US</h2>
 
