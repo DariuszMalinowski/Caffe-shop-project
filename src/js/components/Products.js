@@ -1,5 +1,4 @@
 
-
 import { products } from './productsItems.js';
 /* global Handlebars */
 
@@ -18,10 +17,13 @@ export default class Products {
     this.container.innerHTML = '';
 
     products.forEach((product, index) => {
-      const html = this.template({
+      const html = this.template(
+        /*{
         ...product,
         index: index + 1,
-      });
+      }*/
+        Object.assign({}, product, { index: index + 1 })
+      );
 
       this.container.insertAdjacentHTML('beforeend', html);
     });

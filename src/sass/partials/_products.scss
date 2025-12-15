@@ -1,4 +1,5 @@
 .products-grid {
+  max-width: 1200px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
@@ -32,6 +33,8 @@
   letter-spacing: 2px;
 }
 
+
+
 .product-description {
   margin: 1rem 0;
   color: #555;
@@ -56,7 +59,7 @@
 }
 
 /* MOBILE */
-@media (max-width: 1100px) {
+@media (max-width: 1480px) {
   .products-grid {
     grid-template-columns: 1fr;
   }
@@ -72,7 +75,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 550px) {
   .products-grid {
     grid-template-columns: 1fr;
   }
