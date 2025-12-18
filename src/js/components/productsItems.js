@@ -27,5 +27,5 @@ export const products = [
     image: 'images/coffee-3.webp',
     roasting: 3,
     intensity: 7
-  }
+  },
 ];

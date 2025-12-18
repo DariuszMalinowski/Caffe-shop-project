@@ -1,23 +1,32 @@
 {
-  "products": [
-    {
-      "name": "LA LAGARTIJA",
-      "description": "Mysterious and treacherous... The best choice for the start of your journey!",
-      "roasting": 5,
-      "intensity": 6,
-      "badge": "MOST POPULAR"
-    },
-    {
-      "name": "EL TIGRE",
-      "description": "Really dark coffee, only for the real gourmets. Bitter flavor of grapefruits mixed with peanuts and caramel.",
-      "roasting": 8,
-      "intensity": 9
-    },
-    {
-      "name": "LA CUCARACHA",
-      "description": "Sweet and intense with caramel, grapes, strawberry... Perfect for warm summer days.",
-      "roasting": 3,
-      "intensity": 7
-    }
-  ]
+"products": [
+  {
+    "id": "coffee-1",
+    "name": "LA LAGARTIJA",
+    "price": 9,
+    "description": "You must try",
+    "image": "images/coffee-1.webp",
+    "roasting": 5,
+    "intensity": 6,
+    "badge": "Most popular"
+  },
+  {
+    "id": "coffee-2",
+    "name": "EL TIGRE",
+    "price": 9,
+    "description": "There is no better way to high your energy.",
+    "image": "images/coffee-2.webp",
+    "roasting": 8,
+    "intensity": 9
+  },
+  {
+    "id": "coffee-3",
+    "name": "LA CUCARACHA",
+    "price": 9,
+    "description": "Perfect start of your day.",
+    "image": "images/coffee-3.webp",
+    "roasting": 3,
+    "intensity": 7
+  }
+]
 }
