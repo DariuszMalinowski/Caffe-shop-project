@@ -24,3 +24,31 @@ export default class Hamburger {
   }
 }
 
+class AboutCarousel {
+  constructor() {
+    this.slides = document.querySelectorAll('.about-slide');
+    this.current = 0;
+
+    if (this.slides.length !== 3) return;
+
+    this.start();
+  }
+
+  start() {
+    setInterval(() => {
+      this.changeSlide();
+    }, 5000);
+  }
+
+  changeSlide() {
+    this.slides[this.current].classList.remove('active');
+
+    this.current = (this.current + 1) % this.slides.length;
+
+    this.slides[this.current].classList.add('active');
+  }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  new AboutCarousel();
+});

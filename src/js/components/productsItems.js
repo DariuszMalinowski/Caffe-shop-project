@@ -1,5 +1,5 @@
 
-export const products = [
+/*export const products = [
   {
     id: 'coffee-1',
     name: 'LA LAGARTIJA',
@@ -28,4 +28,4 @@ export const products = [
     roasting: 3,
     intensity: 7
   },
-];
+];*/

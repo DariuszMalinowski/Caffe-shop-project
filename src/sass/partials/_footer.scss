@@ -5,7 +5,7 @@
   font-size: 14px;
 }
 
-.footer-bg {
+.about-section {
   position: relative;
   min-height: 320px;
   background-image: url('../images/about-us.webp ');
@@ -14,50 +14,56 @@
   background-repeat: no-repeat;
 }
 
-/* overlay */
-.footer-bg::before {
-  content: '';
+.about-carousel {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.about-slide {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.65);
+  opacity: 0;
+  transition: opacity 0.6s ease;
 }
 
-/* content */
-.footer-content {
-  position: relative;
-  z-index: 1;
-  padding: 80px 0 60px;
-  max-width: 600px;
+.about-slide.active {
+  opacity: 1;
 }
 
-.footer-title {
-  letter-spacing: 6px;
-  color: var(--accent);
-  margin-bottom: 24px;
-  position: relative;
-  display: inline-block; 
+/* NOWY UKŁAD */
+.about-slide-inner {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
-.footer-title::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -5px;
-  width: 100%;
-  height: 3px;
-  background-color: #eab166;
-  border-radius: 2px;
+.about-slide img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
 }
 
-.footer-content p {
+.about-text {
+  text-align: left;
+}
+
+.about-text h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.about-text p {
+  font-size: 1rem;
   line-height: 1.6;
   opacity: 0.9;
+  max-width: 520px;
 }
 
-.footer-cta {
-  margin-top: 24px;
-  font-style: italic;
-}
 
 /* dolny pasek */
 .footer-bottom {
@@ -99,19 +105,13 @@
 
 /* Responsywność stopki */
 @media (max-width: 768px) {
-  .footer-content {
-    padding: 40px 20px;
-    max-width: 100%;
+   .about-slide-inner {
+    flex-direction: column;
     text-align: center;
   }
 
-  .footer-title {
-    letter-spacing: 3px;
-    font-size: 1.2rem;
-  }
-
-  .footer-content p {
-    font-size: 0.9rem;
+  .about-text {
+    text-align: center;
   }
 
   .footer-bottom {

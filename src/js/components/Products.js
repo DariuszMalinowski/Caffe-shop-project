@@ -1,5 +1,5 @@
 
-import { products } from './productsItems.js';
+//import { products } from './productsItems.js';
 /* global Handlebars */
 
 export default class Products {
@@ -10,22 +10,30 @@ export default class Products {
     if (!this.container || !this.templateEl) return;
 
     this.template = Handlebars.compile(this.templateEl.innerHTML);
-    this.render();
+    this.loadProducts();
   }
 
-  render() {
+  async loadProducts() {
+    try {
+      const response = await fetch('http://localhost:3131/products');
+      const products = await response.json();
+      this.render(products);
+    } catch (error) {
+      console.error('Błąd ładowania produktów', error);
+    }
+  }
+
+  render(products) {
     this.container.innerHTML = '';
 
     products.forEach((product, index) => {
-      const html = this.template(
-        /*{
+      const html = this.template({
         ...product,
         index: index + 1,
-      }*/
-        Object.assign({}, product, { index: index + 1 })
-      );
+      });
 
       this.container.insertAdjacentHTML('beforeend', html);
     });
   }
 }
+
