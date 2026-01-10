@@ -2,12 +2,16 @@
 //import { products } from './productsItems.js';
 /* global Handlebars */
 
+/* global Handlebars */
+
 export default class Products {
   constructor() {
     this.container = document.querySelector('#products-list');
     this.templateEl = document.querySelector('#product-template');
 
-    if (!this.container || !this.templateEl) return;
+    if (!this.container || !this.templateEl) {
+      return;
+    }
 
     this.template = Handlebars.compile(this.templateEl.innerHTML);
     this.loadProducts();
@@ -36,4 +40,5 @@ export default class Products {
     });
   }
 }
+
 
