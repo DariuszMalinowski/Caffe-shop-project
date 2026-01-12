@@ -1,8 +1,8 @@
 
-//import { products } from './productsItems.js';
-/* global Handlebars */
 
 /* global Handlebars */
+
+const url = 'http://localhost:3131/products'
 
 export default class Products {
   constructor() {
@@ -19,7 +19,7 @@ export default class Products {
 
   async loadProducts() {
     try {
-      const response = await fetch('http://localhost:3131/products');
+      const response = await fetch(url);
       const products = await response.json();
       this.render(products);
     } catch (error) {

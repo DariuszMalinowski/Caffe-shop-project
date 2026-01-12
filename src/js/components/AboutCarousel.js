@@ -22,7 +22,3 @@ export default class AboutCarousel {
     this.slides[this.current].classList.add('is-active');
   }
 }
-
-/*document.addEventListener('DOMContentLoaded', () => {
-  new AboutCarousel();
-});*/
